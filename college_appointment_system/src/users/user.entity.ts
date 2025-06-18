@@ -6,7 +6,7 @@ import {Column, Entity, OneToMany, PrimaryGeneratedColumn} from 'typeorm';
 @Entity()
 export class User {
     @PrimaryGeneratedColumn()
-    is: Number;
+    id: Number;
 
     @Column()
     name: string;
