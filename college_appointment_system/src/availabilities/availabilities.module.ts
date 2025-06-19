@@ -7,6 +7,7 @@ import { UsersModule } from 'src/users/users.module';
 @Module({
   imports: [TypeOrmModule.forFeature([Availability]), UsersModule],
   controllers: [AvailabilitiesController],
-  providers: [AvailabilitiesService]
+  providers: [AvailabilitiesService],
+  exports: [TypeOrmModule],
 })
-export class AvailabilitiesModule {}
+export class AvailabilitiesModule { }
